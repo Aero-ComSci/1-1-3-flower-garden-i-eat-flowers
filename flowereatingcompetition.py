@@ -20,19 +20,40 @@ def rose():
     painter.begin_fill()
     painter.circle(10)
     painter.end_fill()
+    painter.pencolor("green")
+    painter.setheading(0)
+    painter.right(90)
+    painter.forward(20)
 def sunflower():
     painter.pencolor("yellow")
     painter.circle(50)
+    painter.setheading(0)
+    painter.pencolor("brown")
+    painter.forward(15)
 def tulip():
     painter.pencolor("orange")
     painter.circle(50)
+    painter.setheading(0)
+    painter.pencolor("green")
+    painter.forward("15")
 def chrysanthemum():
     painter.pencolor("brown")
     painter.circle(30)
 def orchid():
     painter.pencolor("purple")
-    painter.circle(50)
-#unfinished, just shows that it has functionality
+    painter.circle(5)
+    painter.pencolor("brown")
+    painter.setheading(0)
+    for _ in range(6):
+        painter.forward(20)
+        painter.right(25)
+        painter.forward(20)
+        painter.right(25)
+        painter.forward(20)
+        painter.right(25)
+        painter.forward(20)
+        painter.right(180)
+
 
 def drawflowers(flower, quantity):
     for _ in range(quantity):
