@@ -35,7 +35,7 @@ def tulip():
     painter.circle(50)
     painter.setheading(0)
     painter.pencolor("green")
-    painter.forward("15")
+    painter.forward(30)
 def chrysanthemum():
     painter.pencolor("brown")
     painter.circle(30)
