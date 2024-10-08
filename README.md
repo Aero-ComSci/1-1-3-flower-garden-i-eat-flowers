@@ -1,30 +1,25 @@
-# 1.1.3FlowerGarden
+# Flower Drawing with Turtle Graphics
 
-Flower activity 
-AI challenge -
+This is a Python program that uses the Turtle graphics module to draw various types of flowers. The user inputs the name and quantity of flowers they'd like to see, and the program draws them at random positions on the canvas. 
 
-Your Program must do the following:
-1. Take user input and generate a drawing of specific flowers and their quantity using turtle.
+## Flowers Available
 
-How???
-Use 1.1.3 for guidance
+- Rose
+- Sunflower
+- Tulip
+- Chrysanthemum
+- Orchid
 
--- Tokenize user input
+## Images
+![Flower Drawing Example](https://github.com/Aero-ComSci/1-1-3-flower-garden-i-eat-flowers/blob/4c07cf76869cfd3bf486159b8e9ec5436c03fcb1/images/Screenshot%202024-09-06%20152252.png)
+![Input Example](https://github.com/Aero-ComSci/1-1-3-flower-garden-i-eat-flowers/blob/4c07cf76869cfd3bf486159b8e9ec5436c03fcb1/images/Screenshot%202024-09-06%20152257.png)
 
-Compare each of the tokens against a list with 5 flowers your program can draw
+## How It Works
 
-Compare each of the tokens to see if it has a quantity
+1. **Input:** The program accepts input from the user in the form of flower names and optional quantities (e.g., `3 roses`, `sunflower`, `2 orchids`).
+2. **Drawing:** Based on the input, the program will draw the specified flowers in random positions.
+3. **Unrecognized Flowers:** If the input includes unrecognized items, the program will notify the user and display the list of supported flowers.
 
-Your program can deny and give the user some guidance.
+## Issues
 
-  [Tokenize user input ](https://www.google.com)
-
-  Obtain quantity is num
-  Obtain shape -- if in dictionary common shapes
-  Based on flower detected by user input in dict create flower
-
-Create a class flower
-Init takes num petals, num flowers, type of flower
-Creates a flower(s)
-
-Fun for different draw methods
+If the program doesn't recognize a flower you type, it'll give you suggestions based on the available options.
