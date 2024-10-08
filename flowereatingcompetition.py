@@ -24,35 +24,69 @@ def rose():
     painter.setheading(0)
     painter.right(90)
     painter.forward(20)
+
 def sunflower():
     painter.pencolor("yellow")
-    painter.circle(50)
-    painter.setheading(0)
+    painter.fillcolor("yellow")
+    painter.begin_fill()
+    for _ in range(12):
+        painter.circle(50, 60)
+        painter.left(120)
+        painter.circle(50, 60)
+        painter.left(120)
+        painter.left(30)
+    painter.end_fill()
     painter.pencolor("brown")
-    painter.forward(15)
+    painter.setheading(0)
+    painter.penup()
+
 def tulip():
     painter.pencolor("orange")
-    painter.circle(50)
-    painter.setheading(0)
+    painter.fillcolor("orange")
+    painter.begin_fill()
+    painter.setheading(-90)
+    painter.circle(30, 180)
+    painter.end_fill()
     painter.pencolor("green")
-    painter.forward(30)
+    painter.setheading(-90)
+    painter.width(5)
+    painter.forward(80) 
+    painter.width(1)
+
+
 def chrysanthemum():
     painter.pencolor("brown")
-    painter.circle(30)
+    painter.fillcolor("yellow")
+    painter.begin_fill()
+    for _ in range(18):
+        painter.circle(30, 60)
+        painter.right(120)
+        painter.circle(30, 60)
+        painter.right(120)
+        painter.right(20)
+    painter.end_fill()
+
 def orchid():
     painter.pencolor("purple")
+    painter.fillcolor("purple")
+    painter.begin_fill()
     painter.circle(5)
-    painter.pencolor("brown")
+    painter.end_fill()
+
     painter.setheading(0)
-    for _ in range(6):
-        painter.forward(20)
-        painter.right(25)
-        painter.forward(20)
-        painter.right(25)
-        painter.forward(20)
-        painter.right(25)
-        painter.forward(20)
-        painter.right(180)
+    painter.forward(10)  # Move to the start of the petals
+
+    for _ in range(4):
+        painter.fillcolor("purple")
+        painter.begin_fill()
+        painter.circle(15, 90)  # Draw one side of the petal
+        painter.left(90)
+        painter.circle(15, 90)  # Draw the other side of the petal
+        painter.end_fill()
+        painter.right(90)  # Reset heading
+        painter.forward(10)  # Position for the next petal
+        painter.left(90)  # Adjust heading for the next petal
+
 
 
 def drawflowers(flower, quantity):
